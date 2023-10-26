@@ -9,6 +9,10 @@ body
     background-image: url('../img/sfondo.png');
     background-position: center center;
 }
+a
+{
+    color: rgb(56, 221, 236);
+}
 /* HEADER */
 header
 {
@@ -25,6 +29,11 @@ header ul
 {
     list-style-type: none;
     text-align: center;
+}
+header a
+{
+    color: white;
+    text-decoration: none;
 }
 /* MAIN */
 main
@@ -84,4 +93,8 @@ aside div
 footer
 {
     background-color: rgb(26, 77, 106);
+}
+footer a
+{
+    color: violet;
 }
