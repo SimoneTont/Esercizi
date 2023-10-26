@@ -1,0 +1,86 @@
+/* IMPOSTAZIONI GENERALI */
+html
+{
+
+}
+body
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* HEADER */
+header
+{
+    
+    background-color: #35AFF5;
+    color: white;
+}
+header div:first-of-type 
+{
+    margin: auto;
+    text-align: center;
+}
+header ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+/* MAIN */
+main
+{
+    background-color: white;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+article p:first-of-type
+{
+    color: rgb(121, 116, 116);
+}
+.violet
+{
+    color: rgb(129, 37, 143);
+}
+.border_radius 
+{ 
+    border-radius: 10px 10px 10px 10px; 
+    background-color: lightgray;
+}
+/* TABELLE */
+article h3
+{
+    text-align: center;
+}
+article thead
+{
+    color: white;
+    background-color: rgb(24, 94, 194);
+}
+article table
+{
+    margin-left: 10%;
+    text-align: center;
+    border-bottom: 2px solid rgb(24, 94, 194);
+}
+.greybackground
+{
+    background-color: lightgray;
+}
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+aside
+{
+    background-color: white;
+}
+aside div
+{
+    background-color: lightgray;
+}
+.bluebackground
+{
+    background-color: rgb(24, 94, 194);
+}
+/* FOOTER */
+footer
+{
+    background-color: rgb(26, 77, 106);
+}
