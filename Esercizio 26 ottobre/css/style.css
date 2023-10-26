@@ -85,6 +85,10 @@ aside div
 {
     background-color: lightgray;
 }
+input
+{
+    border-bottom-style: dotted;
+}
 .bluebackground
 {
     background-color: rgb(24, 94, 194);
@@ -92,6 +96,7 @@ aside div
 /* FOOTER */
 footer
 {
+    color: white;
     background-color: rgb(26, 77, 106);
 }
 footer a
