@@ -13,7 +13,7 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 var description = "La stringa permette di inserire testo, la boolean permette di assegnare un valore vero o falso, il numero ci permette di compiere operazioni matematiche";
-document.write(description + " "); 
+document.write(description + "  "); 
 console.log(description);
 
 /* ESERCIZIO 2
@@ -23,7 +23,7 @@ console.log(description);
 /* SCRIVI QUI LA TUA RISPOSTA */
 const name = "Simone"
 var nome = "Simone"
-document.write(name + " ");
+document.write(name + "  ");
 console.log(name);
 
 /* ESERCIZIO 3
@@ -34,15 +34,15 @@ console.log(name);
 const num1=12;
 const num2=20;
 var Somma = num1+num2;
-document.write(Somma  + " ");
+document.write(Somma  + "  ");
 console.log(Somma);
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-var x =12;
-document.write(x  + " ");
+let x =12;
+document.write(x  + "  ");
 console.log(x);
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
@@ -62,7 +62,7 @@ console.log(name + " " + nome);
 /* SCRIVI QUI LA TUA RISPOSTA */
 num3 = 4;
 differenza = x - num3;
-document.write(differenza  + " ");
+document.write(differenza  + "  ");
 console.log(differenza);
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -71,12 +71,12 @@ console.log(differenza);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-var name1 ="john"
-var name2 ="John"
-var diverso = true;
+let name1 ="john"
+let name2 ="John"
+let diverso = true;
 diverso = (name1 === name2);
-document.write(diverso + " ");
+document.write(diverso + "  ");
 console.log(diverso);
 diverso = (name1.toLowerCase === name2.toLowerCase)
-document.write(diverso + " ");
+document.write(diverso + "  ");
 console.log(diverso);
