@@ -27,7 +27,7 @@ console.log(risultato);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-num1 = 10;
+num1 = 5;
 if (num1 === 5)
 {
   risultato="Equal to 5";
