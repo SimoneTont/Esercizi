@@ -69,14 +69,14 @@ console.log(risultato);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let totalShoppingCart=50;
+let totalShoppingCart=45;
 if (totalShoppingCart < 50)
 {
   totalShoppingCart=totalShoppingCart+10;
 }
 else
 {}
-risultato= "L'addebito sarà di " + totalShoppingCart + "euro";
+risultato= "L'addebito sarà di " + totalShoppingCart + " euro";
 console.log(risultato);
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -92,7 +92,7 @@ if (totalShoppingCart < 50)
 }
 else
 {}
-risultato= "L'addebito sarà di " + totalShoppingCart + "euro";
+risultato= "L'addebito sarà di " + totalShoppingCart + " euro";
 console.log(risultato);
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
