@@ -12,7 +12,7 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-var description = "La stringa permette di inserire testo, la boolean permette di assegnare un valore vero o falso, il numero ci permette di compiere operazioni matematiche";
+let description = "La stringa permette di inserire testo, la boolean permette di assegnare un valore vero o falso, il numero ci permette di compiere operazioni matematiche";
 document.write(description + "  "); 
 console.log(description);
 
@@ -22,7 +22,7 @@ console.log(description);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const name = "Simone"
-var nome = "Simone"
+let nome = "Simone"
 document.write(name + "  ");
 console.log(name);
 
@@ -33,7 +33,7 @@ console.log(name);
 /* SCRIVI QUI LA TUA RISPOSTA */
 const num1=12;
 const num2=20;
-var Somma = num1+num2;
+let Somma = num1+num2;
 document.write(Somma  + "  ");
 console.log(Somma);
 /* ESERCIZIO 4
@@ -73,10 +73,10 @@ console.log(differenza);
 /* SCRIVI QUI LA TUA RISPOSTA */
 let name1 ="john"
 let name2 ="John"
-let diverso = true;
-diverso = (name1 === name2);
-document.write(diverso + "  ");
-console.log(diverso);
-diverso = (name1.toLowerCase === name2.toLowerCase)
-document.write(diverso + "  ");
-console.log(diverso);
+let uguale = true;
+uguale = (name1 === name2);
+document.write(uguale + "  ");
+console.log(uguale);
+uguale = (name1.toLowerCase === name2.toLowerCase)
+document.write(uguale);
+console.log(uguale);
