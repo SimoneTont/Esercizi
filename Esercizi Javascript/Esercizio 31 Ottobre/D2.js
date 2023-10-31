@@ -6,13 +6,20 @@
 let num1 = 10;
 let num2 = 7;
 let risultato = undefined;
-if (num1 > num2)
+if (num1 === num2)
 {
-  risultato="Il primo numero è maggiore";
+  risultato="I numeri sono uguali";
 }
 else
 {
-  risultato="Il secondo numero è maggiore";
+  if (num1 > num2)
+  {
+    risultato="Il primo numero è maggiore";
+  }
+  else
+  {
+    risultato="Il secondo numero è maggiore";
+  }
 }
 console.log(risultato);
 /* ESERCIZIO 2
@@ -227,10 +234,10 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let numeri =
-{
-  decina:[1,2,3,4,5,6,7,8,9,10],
+const numeri = {
+  decina:[],
 }
+numeri.decina.unshift(1,2,3,4,5,6,7,8,9,10)
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
