@@ -234,14 +234,12 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const numeri = {
-  decina:[],
-}
-numeri.decina.unshift(1,2,3,4,5,6,7,8,9,10)
+let decina=[];
+decina.unshift(1,2,3,4,5,6,7,8,9,10)
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-numeri.decina[9]=100;
-console.log(numeri);
+decina[9]=100;
+console.log(decina);
