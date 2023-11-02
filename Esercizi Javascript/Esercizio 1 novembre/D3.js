@@ -224,19 +224,20 @@ for (i = 0;i<starWarsCharacters.length;i++)
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
 let c=0;
-for (i = 0;i<starWarsCharacters.length;i++)
+for (i = 0;i<characters.length;i++)
 {
-  if (starWarsCharacters[i]===femaleCharacters[c])
+  if (characters[i]===femaleCharacters[c])
   {
-    delete starWarsCharacters[i];
+    delete characters[i];
     c++;
   }
 }
-console.log(starWarsCharacters);
+console.log(characters);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 casuale=Math.floor((Math.random()*10));
+console.log(casuale);
 discorso="The name of this character is "+starWarsCharacters[casuale].name+", their height is "+starWarsCharacters[casuale].height
 +" cm, their mass is "+starWarsCharacters[casuale].mass+" pounds, they have "+starWarsCharacters[casuale].hair_color+" hair, their skin is "
 +starWarsCharacters[casuale].skin_color+" their eyes are "+starWarsCharacters[casuale].eye_color+" they were born in the year "
