@@ -147,19 +147,19 @@ for (i = 0;i<starWarsCharacters.length;i++)
   switch (starWarsCharacters[i].eye_color)
   {
     case "blue":
-      eyeColor.blue.push(starWarsCharacters[i].name);
+      eyeColor.blue.push(starWarsCharacters[i]);
       break;
     case "yellow":
-      eyeColor.yellow.push(starWarsCharacters[i].name);
+      eyeColor.yellow.push(starWarsCharacters[i]);
       break;
     case "brown":
-      eyeColor.brown.push(starWarsCharacters[i].name);
+      eyeColor.brown.push(starWarsCharacters[i]);
       break;
     case "red":
-      eyeColor.red.push(starWarsCharacters[i].name);
+      eyeColor.red.push(starWarsCharacters[i]);
       break;
     case "blue-gray":
-      eyeColor.blue_gray.push(starWarsCharacters[i].name);
+      eyeColor.blue_gray.push(starWarsCharacters[i]);
       break;
   }
 }
@@ -223,17 +223,16 @@ for (i = 0;i<starWarsCharacters.length;i++)
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
-/*c=0;
+c=0;
 for (i = 0;i<starWarsCharacters.length;i++)
 {
-  if (starWarsCharacters[i].name===femaleCharacters[c])
+  if (starWarsCharacters[i].name===femaleCharacters[c].name)
   {
     delete starWarsCharacters[i];
     c++;
   }
 }
 console.log(starWarsCharacters);
-*/
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
