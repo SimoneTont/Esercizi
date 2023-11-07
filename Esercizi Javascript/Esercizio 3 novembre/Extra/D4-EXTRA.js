@@ -95,18 +95,15 @@ console.log(maxShoppingCart(shoppingCart));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let lastAdded=[];
-function latestShoppingCart(shoppingCart)
+function latestShoppingCart(shoppingCart,lastAdded)
 {
-    for (let i = 0;i<shoppingCart.length;i++)
+    for (i = 0;i<shoppingCart.length;i++)
     {
-        if (i===1)
-        {
-            lastAdded.push(shoppingCart[i]);
-        }
-        return lastAdded;
+        lastAdded.push(shoppingCart[i]);
     }
+    return lastAdded;
 }
-console.log(latestShoppingCart(shoppingCart));
+console.log(latestShoppingCart(shoppingCart,lastAdded));
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.

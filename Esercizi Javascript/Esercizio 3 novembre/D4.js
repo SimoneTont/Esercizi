@@ -153,13 +153,7 @@ function UpperFirst(message)
 {
     for(let i = 0; i < message.length; i++)
     {
-        if(i===0)
-        {
-            maiuscola=message.slice(0,1);
-            maiuscola=maiuscola.toUpperCase();
-            newMessage=newMessage+maiuscola;
-        }
-        else if (message[(i-1)]===" ")
+        if (i===0||message[(i-1)]===" ")
         {
             maiuscola=message.slice(i,(i+1));
             maiuscola=maiuscola.toUpperCase();
@@ -187,7 +181,7 @@ function cutString(message)
 {
     for(i = 1; i < (message.length-1); i++)
     {
-        newMessage=newMessage+ message[i]
+        newMessage=newMessage+message[i]
     }
     return newMessage
 }
@@ -205,7 +199,7 @@ function giveMeRandom (n)
     {
         for(i = 0; i < n; i++)
         {
-            casuale=Math.random()*10;
+            casuale=Math.random()*11;
             arr.push(casuale);
         }
         return arr
