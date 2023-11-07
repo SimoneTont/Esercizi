@@ -268,15 +268,6 @@ console.log(movies.find((film) => film.imdbID === givenID));
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
 console.log("Esercizio 15");
-arr=[]
-givenYear=1978
-movies.forEach((film) => {
-  if ((parseInt(film.Year))===givenYear)
-  {
-    arr.push(film);
-  }
-})
-console.log(arr)
 annoUscita="2012"
 const primoUscito = (film) => film.Year === annoUscita;
 console.log(movies.findIndex(primoUscito));
