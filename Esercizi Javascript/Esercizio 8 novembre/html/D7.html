@@ -4,38 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-      }
-
-      body div,
-      footer {
-        padding: 1rem;
-      }
-
-      footer {
-        padding: 1rem;
-        background-color: black;
-        color: white;
-      }
-
-      .myHeading {
-        color: #ff00d6;
-      }
-    </style>
   </head>
-
   <body>
     <div>
-      <h1>Questo è il titolo della pagina</h1>
+      <h1 id="titolo" onclick="makeItClickable()">Questo è il titolo della pagina</h1>
       <h2>Questo è il sottotitolo della pagina</h2>
     </div>
 
@@ -70,7 +44,7 @@
 
     <div id="tableArea"></div>
 
-    <footer>
+    <footer onclick="revealFooterLink()">
       <h3>
         DOM Manipulation is super
         <a
@@ -79,68 +53,46 @@
         >
       </h3>
     </footer>
-    <script>
+    <button onclick="changeTitle()">Esercizio 1</button>
+    <button onclick="addClassToTitle()">Esercizio 2</button>
+    <button onclick="changePcontent()">Esercizio 3</button>
+    <button onclick="changeUrls()">Esercizio 4</button>
+    <button onclick="addToTheSecond()">Esercizio 5</button>
+    <button onclick="addParagraph()">Esercizio 6</button>
+    <button onclick="hideFirstUl()">Esercizio 7</button>
+    <button onclick="paintItGreen()">Esercizio 8</button>
+    <script src="../js/script.js">
       /* ESERCIZIO 1
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
-
-      const changeTitle = function () {}
-
       /* ESERCIZIO 2
        Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
     */
-
-      const addClassToTitle = function () {}
-
       /* ESERCIZIO 3
        Scrivi una funzione che cambi il testo dei p figli di un div
-      */
-
-      const changePcontent = function () {}
-
+    */
       /* ESERCIZIO 4
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
-      */
-
-      const changeUrls = function () {}
-
+    */
       /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
-
-      const addToTheSecond = function () {}
-
       /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un paragrafo al primo div
     */
-
-      const addParagraph = function () {}
-
       /* ESERCIZIO 7
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
     */
-
-      const hideFirstUl = function () {}
-
-      /* ESERCIZIO 8 
-       Scrivi una funzione che renda verde il background di ogni lista non ordinata
+    /* ESERCIZIO 8 
+     Scrivi una funzione che renda verde il background di ogni lista non ordinata
+     */
+    /* ESERCIZIO 9
+     Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
-
-      const paintItGreen = function () {}
-
-      /* ESERCIZIO 9
-       Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
-      */
-
-      const makeItClickable = function () {}
-
-      /* ESERCIZIO 10
-       Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
-      */
-
-      const revealFooterLink = function () {}
-
-      /* ESERCIZIO 11
+    /* ESERCIZIO 10
+     Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
+     */
+    /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
