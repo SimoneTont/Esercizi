@@ -1,0 +1,51 @@
+.Completo
+{
+    text-decoration: line-through red
+}
+body
+{
+    background-size: 100%;
+    background-image: url(../img/616629-foglio-di-quaderno-a-quadretti-bianco-con-bordo-strappato-mockup-o-modello-di-pagina-di-blocco-note-a.jpg)
+}
+header
+{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+input
+{
+    border-radius: 20%;
+    margin-right: 2%;
+}
+    button
+{
+    padding: 0.5%;
+    border-radius: 40%;
+    background-color: darkorange;
+}
+header button
+{
+    margin-right: 2%;
+}
+.Task
+{
+    background-color: darkgreen;
+}
+.Delete
+{
+    background-color: darkred;
+}
+article
+{
+    text-align: right;
+}
+article p
+{
+    font-size: x-large;
+    text-align: center;
+    color: blue;
+}
+article button
+{
+    margin-right: 5%;
+}
