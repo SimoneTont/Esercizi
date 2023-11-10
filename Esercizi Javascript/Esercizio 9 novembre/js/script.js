@@ -26,21 +26,26 @@ const submitTask = function ()
     let pNew = document.createElement("p")
     let deleteButton = document.createElement("button")
     //testo
-    pNew.appendChild(document.createTextNode(input));
-    deleteButton.appendChild(document.createTextNode("Delete the task above"));
-    //aggiungi a pagina
-    div.appendChild(pNew);
-    div.appendChild(deleteButton);
-    //proprietà click
-    pNew.onclick =function() 
+    if (input.trim()!=="")
     {
-        pNew.className ='Completo'
+        pNew.appendChild(document.createTextNode(input.trim()));
+        deleteButton.appendChild(document.createTextNode("Delete the task above"));
+        //aggiungi a pagina
+        div.appendChild(pNew);
+        div.appendChild(deleteButton);
+        //proprietà click
+        pNew.onclick =function() 
+        {
+            pNew.className ='Completo'
+        }
+        deleteButton.onclick =function() 
+        {
+            pNew.remove()
+            deleteButton.remove()
+        }
+        document.getElementsByTagName("input")[0].value = ''
     }
-    deleteButton.onclick =function() 
-    {
-        pNew.remove()
-        deleteButton.remove()
-    }
+    else{}
 }
 const deleteAll = function ()
 {

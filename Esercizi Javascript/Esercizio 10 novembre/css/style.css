@@ -1,0 +1,57 @@
+body
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+h1
+{
+    font-size: x-large;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    color: aquamarine;
+}
+p
+{
+    text-align: center;
+    font-size: larger;
+    color: aquamarine;
+}
+.Visibile
+{
+    visibility: visible;
+}
+button
+{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    padding: 1%;
+    background-color: rgb(41, 147, 31);
+    border-radius: 50%;
+    color: white;
+}
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: auto;
+    width: 80%;
+    border: 0;
+
+}
+table td, table th 
+{
+    border: 1px solid white;
+    color: red;
+}
+td
+{
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+}
+.estratto
+{
+    text-decoration: line-through;
+    color: red
+}
