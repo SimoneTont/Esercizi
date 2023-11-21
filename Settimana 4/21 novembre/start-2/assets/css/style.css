@@ -42,7 +42,12 @@ header nav li a:hover {
 header nav li a::before {
     content: "\22c6\0020";
 }
-
+.HTML5
+{
+    width: 6rem;
+    border: 3px solid #00A0C6;
+    outline: 3px solid #a82264;
+}
 /* MAIN */
 main {
     background-color: #fff;
@@ -177,4 +182,62 @@ footer {
 }
 footer a {
     color: fuchsia;
+}
+/* Responsive */
+/*Desktop*/
+@media screen and (min-width:769px)
+{
+    body
+    {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    header img
+    {
+        display: inline;
+        float: left;
+    }
+    header p
+    {
+        padding-top: 2rem;
+        text-align: left;   
+    }
+    
+    header li
+    {
+        display: inline-block;
+        float: right;
+    }
+    table
+    {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    iframe
+    {
+        width: 40%;
+        display: inline-block;
+        margin-bottom: 3rem;
+    }
+    section
+    {
+        width: 40%;
+        display: inline-block;
+        text-align: right;
+    }
+}
+/*Tablet*/
+@media screen and (max-width:768px)
+{
+    table
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*Smarthphone*/
+@media screen and (max-width:576px)
+{
+    
 }
