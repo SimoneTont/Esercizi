@@ -419,7 +419,7 @@ article div img
   }
   article div img
   {
-    width: 50%;
+    width: 55%;
     float: right;
   }
 }
@@ -494,21 +494,21 @@ section h2
   .fa-caret-square-up
   {
     position: fixed;
-    top: 40px;
+    bottom: 40px;
     right: 10px;
   }
   /*Pulsante calendario*/
   .fa-calendar-alt
   {
     position: fixed;
-    bottom: 120px;
+    top: 120px;
     right: 10px;
   }
   /*Pulsante social*/
   .fa-plus-square
   {
     position: fixed;
-    bottom: 200px;
+    top: 200px;
     right: 10px;
   }
 }
