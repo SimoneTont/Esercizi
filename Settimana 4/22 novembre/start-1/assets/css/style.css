@@ -386,3 +386,143 @@ footer a {
     display: none;
   }
 }
+/*Esercizio*/
+/*Badge float*/
+.imgLeft
+{
+  float: left;
+}
+/*Immagine underline*/
+h1
+{
+  width:0;
+  min-width: 100%;
+  margin-bottom: -10px;
+}
+article div
+{
+  display: inline-block;
+  text-align: left;
+}
+article div img
+{
+  opacity: 50%;
+  width: 100%;
+  float: auto;
+}
+@media screen and (min-width:1070px)
+{
+  h1
+  {
+    width:100%;
+    margin-bottom: -10px;
+  }
+  article div img
+  {
+    width: 50%;
+    float: right;
+  }
+}
+/*Header sticky*/
+header
+{
+  position: sticky;
+  top: 0px;
+}
+/*Novità*/
+section h2
+{
+  position:absolute;
+  top: -1rem;
+}
+.fa-caret-square-up
+{
+  color: violet;
+  font-size: 2rem;
+  padding: 10px;
+  border: solid white 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-shadow: 4px 4px grey;
+}
+/*Pulsante calendario*/
+.fa-calendar-alt
+{
+  color: aquamarine;
+  font-size: 2rem;
+  padding: 10px;
+  border: solid white 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-shadow: 4px 4px grey;
+}
+/*Pulsante social*/
+.fa-plus-square
+{
+  color: aquamarine;
+  font-size: 2rem;
+  padding: 10px;
+  border: solid white 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-shadow: 4px 4px grey;
+}
+/*Pulsante torna su*/
+@media screen and (max-width:700px)
+{
+  .fa-caret-square-up
+  {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  }
+  /*Pulsante calendario*/
+  .fa-calendar-alt
+  {
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+  }
+  /*Pulsante social*/
+  .fa-plus-square
+  {
+    position: fixed;
+    bottom: 200px;
+    right: 10px;
+  }
+}
+/*Versione da 700px in su*/
+@media screen and (min-width:701px)
+  {  /*Pulsante torna su*/
+  .fa-caret-square-up
+  {
+    position: fixed;
+    top: 40px;
+    right: 10px;
+  }
+  /*Pulsante calendario*/
+  .fa-calendar-alt
+  {
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+  }
+  /*Pulsante social*/
+  .fa-plus-square
+  {
+    position: fixed;
+    bottom: 200px;
+    right: 10px;
+  }
+}
+/*Icona fa-tag*/
+aside div
+{
+  position: relative;
+}
+aside .fa-tag
+{
+  position: absolute;
+  top:5px;
+  right:5px;
+  font-size: 2rem;
+  opacity: 40%;
+}
+
