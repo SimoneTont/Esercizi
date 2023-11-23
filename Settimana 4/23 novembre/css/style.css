@@ -183,6 +183,24 @@ footer img
 /*Versione laptop (medium)*/
 @media (min-width: 769px) and  (max-width: 1024px)
 {
+    body
+    {
+        display: flex;
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    .Logo
+    {
+        position: 0;
+    }
+    nav div
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
     section
     {
         display: inline-block;
@@ -200,6 +218,23 @@ footer img
 /*Versione desktop (medium-large)*/
 @media (min-width: 1025px) and  (max-width: 1200px)
 {
+    body
+    {
+        display: flex;
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    .Logo
+    {
+        position: 0;
+    }
+    nav div
+    {
+        display: flex;
+        flex-direction: column;
+    }
     section
     {
         display: inline-block;
@@ -209,11 +244,27 @@ footer img
     {
         display: none;
     }
-    
 }
 /*Smart TV (extralarge)*/
 @media screen and (min-width: 1201px)
 {
+    body
+    {
+        display: flex;
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    .Logo
+    {
+        position: 0;
+    }
+    nav div
+    {
+        display: flex;
+        flex-direction: column;
+    }
     .ContainerFooter
     {
         display: flex
