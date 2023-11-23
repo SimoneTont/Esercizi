@@ -1,0 +1,229 @@
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+/*Versione mobile (Usata come base)*/
+/*Generale*/
+body
+{
+    background-color: gray;
+    color: #732104;
+    text-align: center;
+    font-size: 1rem;
+}
+button
+{
+    border-radius: 50%;
+    background-color: #FFDF7F;
+    padding: 1rem;
+    margin-top: 5%;
+}
+img
+{
+    width: 150px;
+}
+/*Header*/
+header
+{
+    background-color: #FEF7E2;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 60%;
+    border-radius: 25px;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Logo
+{
+    background-color: #FFDF7F;
+    border-radius: 30%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Logo img
+{
+    width: 2rem
+}
+nav div
+{
+    margin: auto;
+}
+h1
+{
+    font-weight: bold;
+    font-size: 2rem;
+}
+/*Article*/
+h2
+{
+    font-weight:900;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.flex
+{
+    padding-top: 5%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.flex div
+{
+    margin-right: 10%;
+}
+section div
+{
+    background-color: #FEF7E2;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+section div p:first-child
+{
+    font-weight: bold;
+}
+section img
+{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+section button
+{
+    margin-bottom: 5%;
+}
+/*Footer*/
+footer
+{
+    display: inline-block;
+}
+h3
+{
+    font-weight:900;
+    margin-bottom: 2rem;
+}
+footer p
+{
+    width:0;
+    min-width: 60%;
+    margin: auto;
+}
+footer img
+{
+    width: 80%;
+    margin-top: 1rem;
+}
+.ContainerFooter
+{
+    background-color: #FEF7E2;
+    padding: 1rem;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width:480px)
+{
+    nav
+    {
+        flex-direction: column;
+    }
+    .Logo
+    {
+        position: 0;
+    }
+}
+/*Versione tablet*/
+@media (min-width: 481px) and  (max-width: 768px)
+{
+    header
+    {
+        display: flex;
+        align-items: center;
+    }
+    header div
+    {
+        display: flex;
+        align-items: center;
+    }
+    header div:first-child
+    {
+        order:1
+    }
+    .Logo
+    {
+        order: 2
+    }
+    header div:nth-child(2)
+    {
+        order:3
+    }
+    section
+    {
+        display: inline-block;
+        width: 40%;
+    }
+    section:nth-child(5)
+    {
+        display: none;
+    }
+}
+/*Versione laptop (medium)*/
+@media (min-width: 769px) and  (max-width: 1024px)
+{
+    section
+    {
+        display: inline-block;
+        width: 30%;
+    }
+    section:nth-child(4)
+    {
+        display: none;
+    }
+    section:nth-child(5)
+    {
+        display: none;
+    }
+}
+/*Versione desktop (medium-large)*/
+@media (min-width: 1025px) and  (max-width: 1200px)
+{
+    section
+    {
+        display: inline-block;
+        width: 15%;
+    }
+    section:nth-child(4)
+    {
+        display: none;
+    }
+    
+}
+/*Smart TV (extralarge)*/
+@media screen and (min-width: 1201px)
+{
+    .ContainerFooter
+    {
+        display: flex
+    }
+    footer img
+    {
+        order: 0
+    }
+    .TestoFooter
+    {
+        order: 1
+    }
+}
