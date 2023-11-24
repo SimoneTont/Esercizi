@@ -1,0 +1,65 @@
+body
+{
+    font-family: "Indie Flower", sans-serif;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+}
+.postit
+{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    width:200px;
+    height: 200px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    visibility: hidden;
+    animation: AppearingPostit 1500ms ease-in-out 0.5s forwards;
+    -moz-animation: AppearingPostit 1500ms ease-in-out 0.5s forwards;
+    -webkit-animation: AppearingPostit 1500ms ease-in-out 0.5s forwards;
+    -o-animation: AppearingPostit 1500ms ease-in-out 0.5s forwards;
+}
+.Odd
+{
+    background: rgb(255, 162, 0);
+}
+.Even
+{
+    background-color: darkgreen;
+    animation-delay: 3s;
+}
+.Third
+{
+    background-color: #524AED;
+    animation-delay: 6s;
+}
+.Odd:not(:hover)
+{
+    rotate: -15deg;
+    transition-duration: 1s;
+}
+.Third:not(:hover)
+{
+    transition-duration: 1s;
+}
+.Even:not(:hover)
+{
+    rotate: 15deg;
+    transition-duration: 1s;
+}
+.postit:hover
+{
+    scale: 1.5;
+    transition-duration: 2s;
+}
+@keyframes AppearingPostit
+{
+    0%   {opacity: 0%; transform: scale(3); visibility: visible;}
+  25%  {opacity: 25%; transform: scale(2.5); visibility: visible;}
+  50%  {opacity: 50%; transform: scale(2); visibility: visible;}
+  75%  {opacity: 75%; transform: scale(1.5); visibility: visible;}
+  100% {opacity: 100%; transform: scale(1); visibility: visible;}
+}
