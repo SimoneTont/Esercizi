@@ -1,3 +1,33 @@
 body {
   background-color: antiquewhite;
+}
+
+header {
+  background-color: #640f5c;
+  position: relative;
+}
+
+header nav {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+header img {
+  width: 30%;
+}
+
+.showcase-content {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
