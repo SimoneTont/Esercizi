@@ -1,3 +1,5 @@
+//Parte 1
+
 let risultato;
 
 class User 
@@ -39,3 +41,26 @@ let francesca = new User('Francesca', 'Neri', 29, 'Napoli');
 console.log(mario.confrontoEta(giuseppe));
 console.log(francesca.confrontoEta(mario));
 console.log(giuseppe.confrontoEta(francesca));
+
+// Parte 2
+
+class Pet 
+{
+    static count = 0;
+    constructor(petName, ownerName, species, breed)
+    {
+        this.petName = petName;
+        this.ownerName = ownerName;
+        this.species = species;
+        this.breed = breed;
+        Pet.count++;
+    }
+    ownerNameTest(pet) 
+    {
+        if(pet.ownerName === this.ownerName) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
