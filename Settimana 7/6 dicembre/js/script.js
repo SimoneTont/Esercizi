@@ -7,7 +7,6 @@ class User
         this.age = age;
     }
 }
-let NewUser = new User('Mario', 'Rossi', 29, 'Roma');
 
 let saveBtn = document.querySelector('#SaveButton');
 
@@ -48,3 +47,20 @@ function Contatore ()
 }
 Contatore();
 setInterval(Contatore, 1000);
+
+//To do list
+
+let taskBtn = document.querySelector('#TaskButton');
+//console.log(taskBtn)
+
+taskBtn.addEventListener('click', () => 
+{
+    const para = document.createElement("p");
+    const task = document.querySelector ("#Es3 > input").value
+    //console.log(task)
+    const node = document.createTextNode(task);
+    para.appendChild(node);
+    const element = document.getElementById("TasksDiv");
+    element.appendChild(para);
+    document.querySelector ("#Es3 > input").value="";
+})
