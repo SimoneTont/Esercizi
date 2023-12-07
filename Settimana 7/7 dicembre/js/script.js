@@ -31,7 +31,7 @@ function CreateCard (Obj)
     let row = document.createElement("div");
     if ((c%4)===0)
     {
-        row.classList.add("row", "row-cols-1", "row-cols-sm-2", "row-cols-xxl-4");
+        row.classList.add("row", "row-cols-1", "row-cols-sm-3", "row-cols-xxl-4");
         container.appendChild(row);
         d++;
     }
@@ -42,7 +42,7 @@ function CreateCard (Obj)
 
     let CardDiv = document.createElement("div");//Crea CardDiv
     lastrow.appendChild(CardDiv);
-    CardDiv.classList.add("card", "col");
+    CardDiv.classList.add("card", "col", "m-2");
     CardDiv.style.width= "18rem";//Aggiungi classi e stile a CardDiv
 
     let imag = document.createElement("img", "img-fluid");//Crea imag
