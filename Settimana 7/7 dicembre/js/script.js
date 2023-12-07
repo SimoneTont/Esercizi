@@ -31,7 +31,7 @@ function CreateCard (Obj)
     let row = document.createElement("div");
     if ((c%4)===0)
     {
-        row.classList.add("row");
+        row.classList.add("row", "row-cols-1", "row-cols-sm-2", "row-cols-xxl-4");
         container.appendChild(row);
         d++;
     }
@@ -42,10 +42,10 @@ function CreateCard (Obj)
 
     let CardDiv = document.createElement("div");//Crea CardDiv
     lastrow.appendChild(CardDiv);
-    CardDiv.classList.add("card", "col-3");
+    CardDiv.classList.add("card", "col");
     CardDiv.style.width= "18rem";//Aggiungi classi e stile a CardDiv
 
-    let imag = document.createElement("img");//Crea imag
+    let imag = document.createElement("img", "img-fluid");//Crea imag
     CardDiv.appendChild(imag);//imag dentro CardDiv
     imag.src=Obj.img;
     imag.alt=Obj.asin;
@@ -80,6 +80,12 @@ function CreateCard (Obj)
 
     CardBody.appendChild(discardButton);
     discardButton.innerText="Discard";
+
+    discardButton.addEventListener('click', () => 
+    {
+        //alert("ciao")
+        discardButton.parentElement.parentElement.remove();
+    });
 
     c++;
 }
