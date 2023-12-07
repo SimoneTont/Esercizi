@@ -21,13 +21,26 @@ document.addEventListener("DOMContentLoaded", () =>
     }
 });
 
+let c=0;//Contatore righe
+
 function CreateCard (Obj)
 {
     let container = document.querySelector('#CardsContainer');
 
+    let row
+    if ((c%4)===0)
+    {
+        row = document.createElement("div");
+        row.classList.add("row");
+        container.appendChild(row);
+        let allrows=document.querySelectorAll("row")
+        let currentLastRow=allrows[((allrows.length-1))]
+        console.log(currentLastRow)
+    }
+
     let CardDiv = document.createElement("div");//Crea CardDiv
     container.appendChild(CardDiv);
-    CardDiv.classList.add("card");
+    CardDiv.classList.add("card", "col");
     CardDiv.style.width= "18rem";//Aggiungi classi e stile a CardDiv
 
     let imag = document.createElement("img");//Crea imag
@@ -65,6 +78,8 @@ function CreateCard (Obj)
 
     CardBody.appendChild(discardButton);
     discardButton.innerText="Discard";
+
+    c++;
 }
 
 /*<div class="card" style="width: 18rem;">
