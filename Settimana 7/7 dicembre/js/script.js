@@ -75,6 +75,13 @@ function CreateCard (Obj)
     CardBody.appendChild(buyButton);
     buyButton.innerText="Buy Now";
 
+    buyButton.addEventListener('click', () => 
+    {
+        //alert("ciao")
+        let selected=buyButton.parentElement
+        Shoppinglist(selected);
+    });
+
     let discardButton = document.createElement("a");
     discardButton.classList.add("btn", "btn-light", "border", "border-danger", "mx-4", "text-danger")
 
@@ -88,6 +95,12 @@ function CreateCard (Obj)
     });
 
     c++;
+}
+let arr = []
+function Shoppinglist (libro)
+{
+    arr.push(libro)
+    console.log(arr)
 }
 
 /*<div class="card" style="width: 18rem;">
