@@ -1,4 +1,4 @@
-/*addEventListener("DOMContentLoaded", () => { fetch(ServerURL, {method: "GET"}).then(response => response.json()).then(json => CheckArray(json))});
+addEventListener("DOMContentLoaded", () => { fetch(ServerURL, {method: "GET"}).then(response => response.json()).then(json => CheckArray(json))});
 
 let controlArr=[]
 
@@ -7,10 +7,10 @@ function CheckArray(arrObj)
     arrObj.forEach(element => {
         controlArr.push(element)
     });
-    
     console.log(controlArr)
 }
-*/
+
+
 class Item
 {
     constructor(email, password)
@@ -50,7 +50,8 @@ SubmitButton.addEventListener('click', () => {
     }
 })
 
-/*function CheckFunc (arrObj,loginObj)
+/*
+function CheckFunc (arrObj,loginObj)
 {
     let c=0;
     arrObj.forEach(element => {
@@ -70,4 +71,5 @@ SubmitButton.addEventListener('click', () => {
     }
     console.log(c)
     console.log(arrObj)
-}*/
+}
+*/
