@@ -1,6 +1,6 @@
 console.log(window)
 
-let ServerURL="http://localhost:3000/users"
+let UsersURL="http://localhost:3000/users"
 
 class Item
 {
@@ -40,7 +40,7 @@ SubmitButton.addEventListener('click', () => {
         let obj= new Item (F[0].value, F[1].value, F[2].value, F[3].value, F[4].value)
         console.log(obj)
 
-        fetch(ServerURL, {
+        fetch(UsersURL, {
             method: "POST", // Method della chiamata 
             body: JSON.stringify(obj), // nel body della richiesta invio il dato al server
             headers: {
@@ -50,7 +50,7 @@ SubmitButton.addEventListener('click', () => {
     }
 })
 
-fetch(ServerURL, {method: "GET"}).then(response => response.json()).then(json => console.log(json))
+fetch(UsersURL, {method: "GET"}).then(response => response.json()).then(json => console.log(json))
 
 /*let obj={
   "email": "oliviera@mail.com",
