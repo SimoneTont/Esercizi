@@ -1,4 +1,8 @@
-//import logo from './logo.svg' 
+/*
+rfc -> React Function Component
+rcc -> React Class Component
+rafc -> React Arrow Function Component
+*/
 import './App.css';
 import ButtonComp from "./Components/ButtonComponent"
 import ImageComp from "./Components/ImageComponent"
