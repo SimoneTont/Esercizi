@@ -1,0 +1,24 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+$primary: red;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark
+);
+
+//Modifiche funzioni
+
+//Fine modifiche funzioni
+
+//Modifiche variabili
+
+//Fine modifiche variabili
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
